@@ -1,0 +1,168 @@
+
+#we will make a game that players need to predict true choice
+# if a number is in correct place it will say
+#there are 3 chances of players 
+
+#a cnance number is 143
+
+print("you are welcome you are welcome to next game")
+print(" you have to predict the number that includes 3 numbers")
+print(" you have infinive rights")
+consent=input ("can we continue yes or no? ")
+if consent=='yes':
+    while True:
+        number=input("can you enter a number")
+        first=int(number[0])
+        second=int(number[1])
+        third=int(number[2])
+        number=int(number)
+        if number==143:
+            for i in range(3):
+                print("excelent")
+                print("👏")
+            break  
+        elif (first==1) and (second!=4) and (third!=3):
+            print("sorry, the first number only is correct")
+            print(" do not give up, you can try again")
+        elif (first!=1) and (second==4) and (third!=3):
+            print("sorry, the second number only is correct")
+            print(" do not forget that the real fail is to give up , you can try again")
+        elif (first!=1) and (second!=4) and (third==3):
+            print("sorry, the third number only is correct")
+            print(" you can not give up, ı believe you, you can deak with this number  , you can try again")
+        elif (first==1) and (second==4) and (third!=3):
+            print("sorry, the first number  and the second number only are correct")
+            print(" do not give up, you can try again")
+        elif (first==1) and (second!=4) and (third==3):
+            print("sorry, the first number  and the third number only are correct")
+            print(" you can achieve, you can try again")
+        elif (first!=1) and (second==4) and (third==3):
+            print("good job")
+            print("sorry, the first number is only wrong")
+            print("  you can try again")
+        else:
+            print("sorry, all of numbers are wrong ")
+            print("however, your oppurtunity did  not finish")
+            print("you can try again")
+elif consent=='no':  
+    print("next time, inşallah")
+else:
+    print("yes or no, bro")"""
+"""import random
+numbers=[1,2,3,4,5,6,7,8,9,10]
+x=random.randint(1,11)
+print("you can choose a number from numbers")
+print("numbers", numbers)
+prediction=int(input("can you predict the number"))
+hak=0
+while hak!=4:
+    if prediction==x:
+        for _ in range(3):
+            print("well done👏👏👏")
+        break
+    else:
+        print("sorry, it is wrong")
+        prediction=int(input("can you predict the number"))
+        hak+=1"""
+#you evolutionise game2 accorsding to amounts of numbers of number
+# before  1 next 2 next 3 next 4
+
+"""print("selamın aleyküm")
+print("you are welcome to the predicition game")
+print("at the first game, you have 4 rights")
+stoper=0
+import random
+hidden_number=random.randint(1,10)
+
+while stoper!=4:
+    prediciton=int(input("what is your prediction between 1,9 both of them are included"))
+    if prediciton==hidden_number:
+        for _ in range(3):
+            print("good job👏")
+        break 
+    else:
+        print("don't worry, next time you can achieve inşallah")
+        stoper+=1
+print(hidden_number)
+print(" we can increase the  level of game")
+print("conditionals are that if a number true or walse, we will say to you")
+print("you have 14 rights")
+theprivate_number=random.randint(10,100)
+first_number=int(str(theprivate_number)[0])
+second_number=int(str(theprivate_number)[1])
+stopper=0
+while stopper!=14:
+    your_predictşon=int(input("can you enter the number"))
+    firsf_ofyour=int(str(your_predictşon)[0])
+    second_ofyour=int(str(your_predictşon)[1])
+    if theprivate_number==your_predictşon:
+        for _ in range(3):
+            print("excellent you have some private skills")
+        break
+    elif (firsf_ofyour==first_number) and (second_ofyour!=second_number):
+        print("your first number true but other wrong")
+        print(" can you try again ")
+        stopper+=1
+    elif (firsf_ofyour!=first_number) and (second_ofyour==second_number):    
+        print("your the second number true but other wrong")
+        print(" can you try again ")
+        stopper+=1
+    else:
+        print("every numbers are wrong")
+        print("do not worry you have more some oppurtunities")
+        stopper+=1
+print(theprivate_number)
+
+print("selamın aleyküm")
+print("welcome to the third game ")
+print("pay attention to the game because it is harder thab others")
+print("rules: you will selcet numberthat şncludes 3 number and you have 35 rights ")
+consent=input ("can we continue yes or no? ")
+undefinite_number=random.randint(100,1000)
+unfirst=int(str(undefinite_number)[0])
+unsecond=int(str(undefinite_number)[1])
+unthird=int(str(undefinite_number)[2])
+thestoper=0
+thestoper!=35
+while True:
+        number=input("can you enter a number")
+        first=int(number[0])
+        second=int(number[1])
+        third=int(number[2])
+        number=int(number)
+        if number==undefinite_number:
+            for i in range(3):
+                print("excelent")
+                print("👏")
+            break  
+        elif (first==unfirst) and (second!=unsecond) and (third!=unthird):
+            print("sorry, the first number only is correct")
+            print(" do not give up, you can try again")
+            thestoper+=1
+        elif (first!=unfirst) and (second==unsecond) and (third!=unthird):
+            print("sorry, the second number only is correct")
+            print(" do not forget that the real fail is to give up , you can try again")
+            thestoper+=1
+        elif (first!=unfirst) and (second!=unsecond) and (third==unthird):
+            print("sorry, the third number only is correct")
+            print(" you can not give up, ı believe you, you can deak with this number  , you can try again")
+            thestoper+=1
+        elif (first==unfirst) and (second==unsecond) and (third!=unthird):
+            print("sorry, the first number  and the second number only are correct")
+            print(" do not give up, you can try again")
+            thestoper+=1
+        elif (first==unfirst) and (second!=unsecond) and (third==unthird):
+            print("sorry, the first number  and the third number only are correct")
+            print(" you can achieve, you can try again")
+            thestoper+=1
+        elif (first!=unfirst) and (second==unsecond) and (third==unthird):
+            print("good job")
+            print("sorry, the first number is only wrong")
+            print("  you can try again")
+            thestoper+=1
+        else:
+            print("sorry, all of numbers are wrong ")
+            print("however, your oppurtunity did  not finish")
+            print("you can try again")
+            thestoper+=1
+print(undefinite_number)
